@@ -1,1 +1,1 @@
-# Resume
+# LaTeX Resume
