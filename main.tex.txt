@@ -1,0 +1,154 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Nishanth Solomon}} & Email : {nsolomo2@asu.edu}\\
+  \href{linkedin.com/in/nishanthsolomon}{linkedin.com/in/nishanthsolomon} & Mobile : +1(480)930-2842 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Arizona State University}{Tempe, USA}
+      {Master of Science in Robotics and Autonomous Systems;}{Aug. 2019 -- Apr. 2021}
+    \resumeSubheading
+      {Velammal Institute of Technology, Anna University}{Chennai, India}
+      {Bachelor of Engineering in Mechanical;   (8.11/10.0) }{Aug. 2013 -- Apr. 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Zoho Corporation}{Chennai, India}
+      {Member Technical Staff - NLP - Artificial Intelligence}{May 2017 - July 2019}
+      \resumeItemListStart
+        \resumeItem{Neural Fine Grained Entity Type Classification}
+          {Built a Bi-directional LSTM with Attention Named Entity Recognition system that can locate and classify named entity mentions in unstructured text into 108 pre-defined categories with subtypes.}
+        \resumeItem{Language Detection}
+          {Trained a single layer Neural Network model using bag of N-gram features to detect the language of the given text (trained for 97 languages).}
+        \resumeItem{Text Classification}
+          {Developed a model that classifies free-text documents into predefined categories by training a Bi-Attentive Classification Network(BCN) using contextualized word vectors.}
+        \resumeItem{Chat Sentiment Analysis}
+          {Built a Neural Network model for Chat Sentiment Analysis and won first place in Machine Learning Hackathon.}
+        \resumeItem{DevOps}
+          {Designed, developed, tested, deployed and supported REST API's to expose the trained NLP models as micro-services.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Zoho Corporation}{Chennai, India}
+      {Internship}{Jan 2017 - Mar 2017}
+%       \small{\textit{Project Trainee}}\hspace{13cm}\small{\textit{Jan 2017 - Mar 2017}}
+      \resumeItemListStart
+        \resumeItem{Docker Volume Plugin}
+          {Implemented docker volume plugin which enables engine deployments to be integrated with external storage systems and data volumes to persist beyond the lifetime of a single docker host.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------------
+
+\section{Publications}
+  \resumeSubHeadingListStart
+      \item{``Accident Averting System''. In \textit{International Research Journal of Automotive Technology (IRJAT)}, \\pages 9-15, 2018.}
+      \item{``Autobot for Precision Farming''. In \textit{IEEE International Conference on Innovations in Electrical, Electronics, Instrumentation and Media Technology (ICIEEIMT)}, pages 1-6, 2017.}
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Academic Projects}
+  \resumeSubHeadingListStart
+    \resumeItem{Adaptive Cruise Control}
+      {(ongoing) Developing a system by integrating Sonars, Arduino, Raspberry Pi, New Eagle Controller with an existing autonomous ground vehicle (AGV) to implement adaptive cruise control.}
+    \resumeItem{Accident Averting System}
+      {Developed a system that averts accidents, that occur while overtaking in two-way roads by controlling the vehicle through automatic braking and temporary steering lock system.}
+    \resumeItem{Autobot for Precision Farming}
+      {Built a robot which is used for constant surveillance and investigation of the root cause for illness and gives primary treatment to the affected plants. It is a method of precision farming.}
+     \resumeItem{Design of STOVL Automobile}
+      {Designed and simulated an automobile with an engine powered by modified F135 Pratt \& Whitney engine shaft driven lifting mechanism for Short Take-Off and Vertical Landing.}
+  \resumeSubHeadingListEnd
+
+
+% --------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+   {
+     \textbf{Languages}{: C, C++, Python, Java, Arduino, Matlab}
+     \newline
+     \textbf{Database}{: PostgreSQL, MySQL}
+     \newline
+     \textbf{Web Technologies}{: REST API}
+     \newline
+     \textbf{Tools}{: Creo, NX-CAD, Solidworks}
+   }
+ \resumeSubHeadingListEnd
+
+\end{document}
