@@ -1,0 +1,163 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{multicol}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\columnsep}{2in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}{\textwidth}{{\extracolsep{\fill}}}
+  \textbf{{\huge Nishanth Solomon}}\\
+    \begin{multicols}{3}
+        \href{nishanthsolomon.github.io}{nishanthsolomon.github.io}
+        \columnbreak
+        {nsolomo2@asu.edu}
+        \columnbreak
+        {+1(480)930-2842}
+    \end{multicols}
+\end{center}
+
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Summary}
+{Graduate student and versatile programmer with 2+ years of research in Natural Language Processing, Deep Learning, and work experience in end-to-end Development and Deployment of Software as a Service(SaaS).}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Master of Science in Robotics and Autonomous Systems}{Graduating May, 2021}
+      {Arizona State University, Tempe, USA}{3.89/4}
+    \resumeSubheading
+      {Bachelor of Engineering in Mechanical}{Graduated May, 2017}
+      {Anna University, Chennai, India}{8.11/10.0}
+  \resumeSubHeadingListEnd
+
+% --------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   {
+     \textbf{Databases}{: MySQL, PostgreSQL}
+     \newline
+     \textbf{Deep Learning Libraries}{: AllenNLP, PyTorch, TensorFlow, NLTK, Gensim, spaCy, Scikit-Learn}
+     \newline
+     \textbf{Programming Languages}{: C, C++, Matlab, Java, JavaScript, Python}
+     \newline
+     \textbf{Version Control System}{: Git}
+     \newline
+     \textbf{Web Frameworks}{: Cherrypy, Flask}
+   }
+ \resumeSubHeadingListEnd
+ 
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Developer}{}
+      {Zoho Corporation, Chennai, India}{May 2017 - July 2019}
+      \resumeItemListStart
+        \resumeItem{Natural Language Processing}
+        {Built, trained and deployed Neural Networks}
+        \newline{* Built a model on AllenNLP to classify an industry by feeding a TF-IDF of keywords to a three hidden layer neural network. It was able to accurately predict 45 business labels with 91\% accuracy.}
+        \newline{* Developed a Bi-directional LSTM with Attention Named Entity Recognition system that can locate and classify named entity mentions in unstructured text into 108 pre-defined categories with sub-types.}
+        \newline{* Trained a single layer Neural Network model using bag of N-gram features to detect the language of the given text.}
+        \resumeItem{DevOps}
+          {* Designed, developed, tested, deployed and supported REST APIs to expose the trained NLP models as micro-services. * Responsible for deploying and scaling NLP models. * Maintained and configured PostgreSQL database and supported end user's requests * Managed GitLab repositories and permissions.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Internship}{}
+      {Zoho Corporation, Chennai, India}{Jan 2017 - Mar 2017}
+%       \small{\textit{Project Trainee}}\hspace{13cm}\small{\textit{Jan 2017 - Mar 2017}}
+      \resumeItemListStart
+        \resumeItem{Docker Volume Plugin}
+        {Virtualized the servers using Docker for the test and development environments needs. Implemented docker volume plugin to enable engine deployments to be integrated with external storage systems.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeItem{AI12 Reasoning Challenge}
+            {}
+            \resumeItemListStart
+                \item{Research, development, and code implementation of a system to predict the correct choice in the ARC dataset. Implemented code to support GPU inferencing to make the prediction 10x faster.}
+                \item{14M scientific sentences were indexed in Elasticsearch and used a shingle analyzer to retrieve the top 50 sentences based on the question, which is filtered using the textual entailment model(ELMo) to get top 5 related sentences.}
+                \item{Trained the XLNet Model on the RACE dataset using Google Colab and utilized the model to predict the answer.}
+            \resumeItemListEnd
+        \resumeItem{Question Answering System}
+            {}
+            \resumeItemListStart
+                \item{Built a system to automatically answer FAQs from a set of predefined FAQs.}
+                \item{The system was built on Java with PostgreSQL to store the predefined FAQs. Preliminary selection of candidate's FAQ was done using full text search of PostgreSQL. The input question and the candidate's FAQ was fed to a neural network in python which chooses the appropriate FAQ.}
+                \item{The neural network was based on the paper Bidirectional Attention Flow for Machine Comprehension by Minjoon Seo et al.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+ 
+\end{document}
